@@ -31,35 +31,40 @@ public class T20WCQuiz {
 	public static void main(String[] args) {
 		System.out.println("Welcome!");
 		//The HashMaps of many answers, attached to certain years.
-		HashMap<Integer, String> menHosts = new HashMap<Integer, String>();
+		//hosts
+		HashMap<Integer, String> menHosts = new HashMap<Integer, String>(); 
 		menHosts = loadMenHosts(menHosts);
 		HashMap<Integer, String> womenHosts = new HashMap<Integer, String>();
 		womenHosts = loadWomenHosts(womenHosts);
+		//winners
 		HashMap<Integer, String> menWinners = new HashMap<Integer, String>();
 		menWinners = loadMenWinners(menWinners);
 		HashMap<Integer, String> womenWinners = new HashMap<Integer, String>();
 		womenWinners = loadWomenWinners(womenWinners);
+		//player of the tournament
 		HashMap<Integer, String> menPOTT = new HashMap<Integer, String>();
 		menPOTT = loadMenPOTT(menPOTT);
 		HashMap<Integer, String> womenPOTT = new HashMap<Integer, String>();
 		womenPOTT = loadWomenPOTT(womenPOTT);
+		//player of the final
 		HashMap<Integer, String> menPOTF = new HashMap<Integer, String>();
-		menPOTF = loadMenPOTT(menPOTF);
+		menPOTF = loadMenPOTF(menPOTF);
 		HashMap<Integer, String> womenPOTF = new HashMap<Integer, String>();
-		womenPOTF = loadWomenPOTT(womenPOTF);
-		//Other variables defined
-		int men = menHosts.size();
-		int women = womenHosts.size();
+		womenPOTF = loadWomenPOTF(womenPOTF);
+		//sizes and editions
+		int[] men = {2007, 2009, 2010, 2012, 2014, 2016, 2021, 2022, 2024};
+		int[] women = {2009, 2010, 2012, 2014, 2016, 2018, 2020, 2023, 2024};
+		
 		
 		int gender = randomz(2);
-		int menRandom = randomz(men);
-		int womenRandom = randomz(women);
+		int menRandom = randomz(men.length);
+		int womenRandom = randomz(women.length);
 		int questionCategory = randomz(4);
 		if (gender == 0) {
-			quiz(menRandom, questionCategory, menHosts, menWinners, menPOTT, menPOTF, "Men");
+			quiz(men[menRandom], questionCategory, menHosts, menWinners, menPOTT, menPOTF, "Men");
 		}
 		else {
-			quiz(womenRandom, questionCategory, womenHosts, womenWinners, womenPOTT, womenPOTF, "Women");
+			quiz(women[womenRandom], questionCategory, womenHosts, womenWinners, womenPOTT, womenPOTF, "Women");
 		}
 		
 		
@@ -177,8 +182,8 @@ public class T20WCQuiz {
 		Scanner input = new Scanner (System.in);
 		if (randomQ==0) {
 			System.out.println("Who was the host of the " + gender + "'s T20 World Cup in " + randomE);
-			String host = input.next();
-			if (host.equals(hosts.get(randomE))) {
+			String host = input.nextLine();
+			if (host.equalsIgnoreCase(hosts.get(randomE))) {
 				System.out.println("Great job!");
 			}
 			else {
@@ -187,8 +192,8 @@ public class T20WCQuiz {
 		}
 		else if (randomQ==1) {
 			System.out.println("Who was the winner of the " + gender + "'s T20 World Cup in " + randomE);
-			String winner = input.next();
-			if (winner.equals(winners.get(randomE))) {
+			String winner = input.nextLine();
+			if (winner.equalsIgnoreCase(winners.get(randomE))) {
 				System.out.println("Great job!");
 			}
 			else {
@@ -197,8 +202,8 @@ public class T20WCQuiz {
 		}
 		else if (randomQ==2) {
 			System.out.println("Who was the player of the tournament of the " + gender + "'s T20 World Cup in " + randomE);
-			String playerOfTheTournament = input.next();
-			if (playerOfTheTournament.equals(pOTT.get(randomE))) {
+			String playerOfTheTournament = input.nextLine();
+			if (playerOfTheTournament.equalsIgnoreCase(pOTT.get(randomE))) {
 				System.out.println("Great job!");
 			}
 			else {
@@ -207,8 +212,8 @@ public class T20WCQuiz {
 		}
 		else if (randomQ==3) {
 			System.out.println("Who was the player of the final of the " + gender + "'s T20 World Cup in " + randomE);
-			String playerOfTheFinal = input.next();
-			if (playerOfTheFinal.equals(pOTF.get(randomE))) {
+			String playerOfTheFinal = input.nextLine();
+			if (playerOfTheFinal.equalsIgnoreCase(pOTF.get(randomE))) {
 				System.out.println("Great job!");
 			}
 			else {
