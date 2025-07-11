@@ -2,6 +2,9 @@ package projects2025;
 import java.util.*;
 public class DLS {
 /*
+ * © 2025 Rishi
+ * Last updated: 11th July, 2025
+ * 
  * This method will be used to do calculations based on the Duckworth-Lewis-Stern system!
  * Sources:
  * https://www.omnicalculator.com/sports/duckworth-lewis
@@ -13,7 +16,7 @@ public class DLS {
 	public static void main(String[] args) {
 	Scanner input = new Scanner (System.in);
 	//This will be the main welcome page, from here, the user navigates to the said case they want to do.
-	System.out.println("Greetings! Let's calculate DLS! For now, this is to just be for 50-over games. But first, which case is at hand here?");
+	System.out.println("Greetings! Let's calculate DLS! For now, this is to just be for 50-over games (and the assumption is of maximum overs being 50). But first, which case is at hand here?");
 	System.out.println("1. Team 1 has their innings interrupted.");
 	System.out.println("2. Team 1 has their innings cut short.");
 	System.out.println("3. Team 2 has their innings interrupted.");
@@ -580,7 +583,7 @@ public class DLS {
 		int oversRemainAt1 = input.nextInt(); //Overs remaining at the time of interruption for Team 1
 		System.out.println("Wickets lost so far for Team 1:");
 		int wktLost1 = input.nextInt(); //The number of wickets fallen for Team 1
-		System.out.println("Overs remaining for Team 1:");
+		System.out.println("Overs remaining after interruption for Team 1:");
 		int oversRemainAfter1 = input.nextInt(); //The overs remaining after the interruption for Team 1
 		System.out.println("Runs scored by Team 1:");
 		int runsScored = input.nextInt(); //The runs scored so far by Team 1
@@ -589,18 +592,21 @@ public class DLS {
 		
 		double team1DLSBefore = percentageDLS(oversRemainAt1, wktLost1); //Getting the DLS percentage of Team 1 before interruption
 		double team1DLSAfter = percentageDLS(oversRemainAfter1, wktLost1); //Getting the DLS percentage of Team 1 after interruption
-		double team1DLS = 100.0 - (team1DLSBefore - team1DLSAfter); //Getting the DLS percentage of Team 1
+		double team1DLS = percentageDLS(oversAvail1, 0) - (team1DLSBefore - team1DLSAfter); //Getting the DLS percentage of Team 1
 		double team2DLS = percentageDLS(oversAvail2, 0); //Getting the DLS percentage of Team 2
 		
 		System.out.println("What is the average expected score?");
 		int genScore = input.nextInt(); //The average expected score
 		
-		int parScoreForTeam2 = 0;
-		if (team2DLS < team1DLS) {
-			parScoreForTeam2 = (int) (runsScored * (team2DLS/team1DLS));
+		int parScoreForTeam2 = 0; //initializing the par score for Team 2
+		if (team2DLS < team1DLS) { //team 2 resources less than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
-		else if (team2DLS > team1DLS) {
-			parScoreForTeam2 = (int) (runsScored + (genScore * (team2DLS - team1DLS)/100));
+		else if (team2DLS > team1DLS) { //team 2 resources more than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * (team2DLS - team1DLS)/100)));
+		}
+		else if (team2DLS == team1DLS) { //same
+			parScoreForTeam2 = runsScored + 1;
 		}
 		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
 		input.close();
@@ -628,12 +634,15 @@ public class DLS {
 		double team1DLS = percentageDLS(oversAvail1, wktLost); //Team 1 resources
 		double team2DLS = percentageDLS(oversAvail2, 0); //Team 2 resources
 				
-		int parScoreForTeam2 = 0;
-		if (team2DLS < team1DLS) {
-			parScoreForTeam2 = (int) (runsScored * (team2DLS/team1DLS));
+		int parScoreForTeam2 = 0; //initializing the par score for Team 2
+		if (team2DLS < team1DLS) { //team 2 resources less than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
-		else if (team2DLS > team1DLS) {
-			parScoreForTeam2 = (int) (runsScored + (genScore * (team2DLS - team1DLS)/100));
+		else if (team2DLS > team1DLS) { //team 2 resources more than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * (team2DLS - team1DLS)/100)));
+		}
+		else if (team2DLS == team1DLS) { //same
+			parScoreForTeam2 = runsScored + 1;
 		}
 		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
 		input.close();
@@ -649,33 +658,34 @@ public class DLS {
 		System.out.println("Overs available to Team 1:"); 
 		int oversAvail1 = input.nextInt(); //Overs available for Team 1
 		System.out.println("Runs scored by Team 1:");
-		int runsScored1 = input.nextInt(); //Runs scored by Team 1
+		int runsScored = input.nextInt(); //Runs scored by Team 1
 		System.out.println("Overs available to Team 2:");
-		int oversAvail2 = input.nextInt(); //Overs available for Team 2 (at time of interruption)
+		int oversAvail2 = input.nextInt(); //Overs available for Team 2
 		System.out.println("Overs remaining at interruption for Team 2:");
-		int oversRemain2 = input.nextInt(); //Overs remaining for Team 2
+		int oversRemainAt2 = input.nextInt(); //Overs remaining at time of interruption for Team 2
 		System.out.println("Wickets lost so far for Team 2:");
 		int wktLost = input.nextInt(); //Wickets lost for Team 2
-		System.out.println("Runs scored by Team 2:");
-		int runsScored2 = input.nextInt(); //Runs scored by Team 2
+		System.out.println("Overs remaining after interruption for Team 2:");
+		int oversRemainAfter2 = input.nextInt(); //Overs remaining after interruption for Team 2
 		
-		double atInterrupt = percentageDLS(oversAvail2, wktLost); //resources at interruption
-		double afterInterrupt = percentageDLS(oversRemain2, wktLost); //resources after interruption
+		double atInterrupt = percentageDLS(oversRemainAt2, wktLost); //resources at interruption
+		double afterInterrupt = percentageDLS(oversRemainAfter2, wktLost); //resources after interruption
 		
-		double resourcesAvail = 100 - (atInterrupt + afterInterrupt); //resources available
+		double team1DLS = percentageDLS(oversAvail1, 0); //resources of Team 1
+		double team2DLS = percentageDLS(oversAvail2, 0) - (atInterrupt - afterInterrupt); //resources of Team 2
 		
-		double parScoreForTeam2 = runsScored1 * (resourcesAvail/100); //Par score for Team 2
+		int parScoreForTeam2 = 0; //initializing the par score for Team 2
+		if (team2DLS < team1DLS) {
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
+		}
+		else if (team2DLS > team1DLS) {
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+		}
+		else if (team2DLS == team1DLS) {
+			parScoreForTeam2 = runsScored + 1;
+		}
 		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
 		input.close();
-		if (runsScored2 * 1.0 > parScoreForTeam2) { //Team 2 won
-			System.out.println("Team 2 won");
-		}
-		else if (runsScored2 * 1.0 == parScoreForTeam2) { //Draw
-			System.out.println("It's a draw");
-		}
-		else { //Team 1 won
-			System.out.println("Team 1 won!");
-		}
 	}
 	
 	public static void case4() {
@@ -683,32 +693,31 @@ public class DLS {
 		System.out.println("Case 4. Here we go!");
 		Scanner input = new Scanner (System.in);
 		System.out.println("First things first, details!");
-		System.out.println("Overs available to Team 1?");
+		System.out.println("Overs available to Team 1:");
 		int oversAvail1 = input.nextInt(); //Overs available for Team 1
-		System.out.println("Runs scored by Team 1?");
-		int runsScored1 = input.nextInt(); //Runs scored by Team 1
-		System.out.println("Overs available for Team 2?");
+		System.out.println("Runs scored by Team 1:");
+		int runsScored = input.nextInt(); //Runs scored by Team 1
+		System.out.println("Overs available (to start with) for Team 2:");
 		int oversAvail2 = input.nextInt(); //Overs available for Team 2
-		System.out.println("Wickets lost for Team 2?");
-		int wktLost = input.nextInt(); //Wickets lost for Team 2
-		System.out.println("Runs scored by Team 2?");
-		int runsScored2 = input.nextInt(); //Runs scored by Team 2
+		System.out.println("Wickets lost for Team 2:");
+		int wktLost = input.nextInt(); //Wickets lost for Team 2 2
+		System.out.println("Overs left for Team 2 at time of abandonment:"); //Overs that didn't get used
+		int oversLeft2 = input.nextInt();
+		double team1DLS = percentageDLS(oversAvail1, 0); //resources of Team 1
+		double team2DLS = percentageDLS(oversAvail2, 0) - percentageDLS(oversLeft2, wktLost); //resources of Team 2
 		
-		double resources1 = percentageDLS(oversAvail1, 0); //resources of Team 1
-		double resources2 = 100.0 - percentageDLS(oversAvail2, wktLost); //resources of Team 2
-		
-		double parScoreForTeam2 = runsScored1 * (resources2/resources1); //getting the par score for Team 2
+		int parScoreForTeam2 = 0; //initializing the par score for Team 2
+		if (team2DLS < team1DLS) { //team 2 resources less than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
+		}
+		else if (team2DLS > team1DLS) { //team 2 resources more than team  1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+		}
+		else if (team2DLS == team1DLS) { //same
+			parScoreForTeam2 = runsScored + 1;
+		}
 		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
 		input.close();
-		if (runsScored2 * 1.0 > parScoreForTeam2) { //Team 2 won
-			System.out.println("Team 2 won");
-		}
-		else if (runsScored2 * 1.0 == parScoreForTeam2) { //Draw
-			System.out.println("It's a draw");
-		}
-		else { //Team 1 won
-			System.out.println("Team 1 won!");
-		}
 	}
 	
 	public static void case5() {
@@ -719,16 +728,25 @@ public class DLS {
 		System.out.println("Overs available to Team 1:");
 		int oversAvail1 = input.nextInt(); //overs available to Team 1
 		System.out.println("Runs scored by Team 1:");
-		int runs1 = input.nextInt(); //runs scored by Team 1
+		int runsScored = input.nextInt(); //runs scored by Team 1
 		System.out.println("Overs available to Team 2:");
 		int oversAvail2 = input.nextInt(); //overs available to Team 2
 		
-		double resources1 = percentageDLS(oversAvail1, 0); //resources of Team 1
-		double resources2 = percentageDLS(oversAvail2, 0); //resources of Team 2
+		double team1DLS = percentageDLS(oversAvail1, 0); //resources of Team 1
+		double team2DLS = percentageDLS(oversAvail2, 0); //resources of Team 2
 		
-		double parScoreForTeam2 = runs1 * (resources2/resources1); //par score of team 2
-		
-		System.out.println("The target for team 2, after revising on DLS, is: " + (int) parScoreForTeam2);
+		int parScoreForTeam2 = 0; //initializing the par score for Team 2
+		if (team2DLS < team1DLS) { //team 2 has less resources than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
+		}
+		else if (team2DLS > team1DLS) { //team 2 has more resources than team 1
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+		}
+		else if (team2DLS == team1DLS) { //same
+			parScoreForTeam2 = runsScored + 1;
+		}
+		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
+		input.close();
 	}
 	
 	
