@@ -127,26 +127,26 @@ public class ICC {
 		String detail = input.next();
 		if (detail.equalsIgnoreCase("W")) {//for winner
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The winner of the" + menEditions[index] + " men's edition is " + menWinners[index]);
+				System.out.println("The winner of the " + menEditions[index] + " men's edition is " + menWinners[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The winner of the" + womenEditions[index] + " women's edition is " + womenWinners[index]);
+				System.out.println("The winner of the " + womenEditions[index] + " women's edition is " + womenWinners[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("POTF")) {//for player of the final
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is" + menPOTF[index]);
+				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTF[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is" + womenPOTF[index]);
+				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTF[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("POTT")) {//for player of the tournament
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is" + menPOTF[index]);
+				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTT[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is" + womenPOTF[index]);
+				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTT[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("RU")) {//for runners-up
@@ -260,10 +260,10 @@ public class ICC {
 		String detail = input.next();
 		if (detail.equalsIgnoreCase("W")) {//for winner
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The winner of the" + menEditions[index] + " men's edition is " + menWinners[index]);
+				System.out.println("The winner of the " + menEditions[index] + " men's edition is " + menWinners[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The winner of the" + womenEditions[index] + " women's edition is " + womenWinners[index]);
+				System.out.println("The winner of the " + womenEditions[index] + " women's edition is " + womenWinners[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("POTF")) {//for player of the final
@@ -276,10 +276,10 @@ public class ICC {
 		}
 		else if (detail.equalsIgnoreCase("POTT")) {//for player of the tournament
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTF[index]);
+				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTT[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTF[index]);
+				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTT[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("RU")) {//for runners-up
@@ -292,10 +292,10 @@ public class ICC {
 		}
 		else if (detail.equalsIgnoreCase("H")) {//host venue
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The host of the" + menEditions[index] + " men's edition is " + menHosts[index]);
+				System.out.println("The host of the " + menEditions[index] + " men's edition is " + menHosts[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The host of the" + womenEditions[index] + " women's edition is " + womenHosts[index]);
+				System.out.println("The host of the " + womenEditions[index] + " women's edition is " + womenHosts[index]);
 			}
 		}
 	}
@@ -370,10 +370,10 @@ public class ICC {
 		}
 		else if (detail.equalsIgnoreCase("POTT")) {//for player of the tournament
 			if (gender.equalsIgnoreCase("MEN")) {//if men
-				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTF[index]);
+				System.out.println("The player of the final for the " + menEditions[index] + " men's edition is " + menPOTT[index]);
 			}
 			else if (gender.equalsIgnoreCase("WOMEN")) {//if women
-				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTF[index]);
+				System.out.println("The player of the final for the " + womenEditions[index] + " women's edition is " + womenPOTT[index]);
 			}
 		}
 		else if (detail.equalsIgnoreCase("RU")) {//for runners-up
