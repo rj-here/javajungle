@@ -92,6 +92,7 @@ public class ICC {
 		  https://en.wikipedia.org/wiki/2020_Women%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2023_Women%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2024_Women%27s_T20_World_Cup
+		  https://www.espncricinfo.com/series/icc-women-s-t20-world-cup-2024-25-1432420/new-zealand-women-vs-south-africa-women-final-1432444/full-scorecard
 		 */
 		int[] menEditions = {2007, 2009, 2010, 2012, 2014, 2016, 2021, 2022, 2024}; //The years a men's edition has taken place
 		int[] womenEditions = {2009, 2010, 2012, 2014, 2016, 2018, 2020, 2023, 2024}; //The years a women's edition has taken place
@@ -102,11 +103,11 @@ public class ICC {
 		String[] menHosts = {"South Africa", "England", "West Indies", "Sri Lanka", "Bangladesh", "India", "United Arab Emirates & Oman", "Australia", "West Indies & United States of America"}; //The hosts of the men's editions
 		String[] womenHosts = {"England", "West Indies", "Sri Lanka", "Bangladesh", "India", "West Indies", "Australia", "South Africa", "United Arab Emirates"}; //The hosts of the women's editions
 		String[] menPOTT = {"Shahid Afridi", "Tillakaratne Dilshan", "Kevin Pietersen", "Shane Watson", "Virat Kohli", "Virat Kohli", "David Warner", "Sam Curran", "Jasprit Bumrah"}; //The player of the tournament for the men's editions
-		String[] womenPOTT = {"Claire Taylor", "Nicole Brown", "Charlotte Edwards", "Anya Shrubsole", "Stafanie Taylor", "Alyssa Healy", "Beth Mooney", "Ashleigh Gardner", "Amelia Kerr"}; //The player of the tournament for the women's editions
-		String[] menPOTF = {"Irfan Pathan", "Shahid Afridi", "Craig Kieswetter", "Marlon Samuels", "Mitchell Marsh", "Sam Curran", "Virat Kohli"}; //The player of the match in the final for the men's editions
-		String[] womenPOTF = {"Katherine Sciver-Brunt", "Ellyse Perry", "Jess Cameron", "Sarah Coyte", "Hayley Matthews", "Ashleigh Gardner", "Alyssa Healy", "Beth Mooney", "Amelia Kerr"}; //The player of the match for the women's editions
+		String[] womenPOTT = {"Claire Taylor", "Nicola Browne", "Charlotte Edwards", "Anya Shrubsole", "Stafanie Taylor", "Alyssa Healy", "Beth Mooney", "Ashleigh Gardner", "Amelia Kerr"}; //The player of the tournament for the women's editions
+		String[] menPOTF = {"Irfan Pathan", "Shahid Afridi", "Craig Kieswetter", "Marlon Samuels", "Kumar Sangakarra", "Marlon Samuels", "Mitchell Marsh", "Sam Curran", "Virat Kohli"}; //The player of the match in the final for the men's editions
+		String[] womenPOTF = {"Katherine Brunt", "Ellyse Perry", "Jess Cameron", "Sarah Coyte", "Hayley Matthews", "Ashleigh Gardner", "Alyssa Healy", "Beth Mooney", "Amelia Kerr"}; //The player of the match for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT), the runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
@@ -239,7 +240,7 @@ public class ICC {
 		String[] menPOTF = {"Clive Lloyd", "Viv Richards", "Mohinder Amarnath", "David Boon", "Wasim Akram", "Aravinda de Silva", "Shane Warne", "Ricky Ponting", "Adam Gilchrist", "MS Dhoni", "James Faulkner", "Ben Stokes", "Travis Head"}; //The player of the match in the final for the men's editions
 		String[] womenPOTF = {"N/A", "N/A", "N/A", "N/A", "Jo Chamberlain", "Debbie Hockley", "Belinda Clark", "Karen Rolton", "Nicky Shaw", "Jess Cameron", "Anya Shrubsole", "Alyssa Healy"}; ///The player of the match in the final for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), of the tournament (POTT) the runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
@@ -333,7 +334,7 @@ public class ICC {
 		String[] menPOTF = {"Jacques Kallis", "Chris Cairns", "N/A", "Ian Bradshaw", "Shane Watson", "Shane Watson", "Ravindra Jadeja", "Fakhar Zaman", "Rohit Sharma"}; //The player of the match in the final for the men's editions
 		String[] womenPOTF = {}; //The player of the match in the final for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), of the tournament (POTT) the runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
