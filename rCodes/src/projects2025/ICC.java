@@ -106,7 +106,7 @@ public class ICC {
 		String[] menPOTF = {"Irfan Pathan", "Shahid Afridi", "Craig Kieswetter", "Marlon Samuels", "Mitchell Marsh", "Sam Curran", "Virat Kohli"}; //The player of the match in the final for the men's editions
 		String[] womenPOTF = {"Katherine Sciver-Brunt", "Ellyse Perry", "Jess Cameron", "Sarah Coyte", "Hayley Matthews", "Ashleigh Gardner", "Alyssa Healy", "Beth Mooney", "Amelia Kerr"}; //The player of the match for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), of the tournament (POTT) the runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT), the runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
