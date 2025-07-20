@@ -3,7 +3,7 @@ import java.util.*;
 public class ICC {
 /*
  * © 2025 Rishi
- * Last updated: 13th July, 2025
+ * Last updated: 20th July, 2025
  An all-tournament database, of major details. Will use ESPNCricinfo & Wikipedia to double check things.
  This will feature tournaments which have taken place already, hence I do not have for example the 2025 Women's Cricket World Cup, to be held in India & Sri Lanka later this year. Though, I will update at the time of the tournament!
  */
@@ -176,6 +176,7 @@ public class ICC {
 		 	https://en.wikipedia.org/wiki/Cricket_World_Cup
 		 	https://en.wikipedia.org/wiki/1975_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/prudential-world-cup-1975-60793/australia-vs-west-indies-final-65049/full-scorecard
+		 	https://en.wikipedia.org/wiki/1975_Cricket_World_Cup_final
 		 	https://en.wikipedia.org/wiki/1979_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/prudential-world-cup-1979-60806/england-vs-west-indies-final-65063/full-scorecard
 		 	https://en.wikipedia.org/wiki/1983_Cricket_World_Cup
@@ -183,37 +184,43 @@ public class ICC {
 		 	https://en.wikipedia.org/wiki/1987_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/reliance-world-cup-1987-88-60876/australia-vs-england-final-65117/full-scorecard
 		 	https://en.wikipedia.org/wiki/1992_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/benson-hedges-world-cup-1991-92-60924/england-vs-pakistan-final-65156/full-scorecard
+		 	https://www.espncricinfo.com/series/benson-hedges-world-cup-1991-92-60924/england-vs-pakistan-final-65156/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1996_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/wills-world-cup-1995-96-60981/australia-vs-sri-lanka-final-65192/full-scorecard
+		 	https://www.espncricinfo.com/series/wills-world-cup-1995-96-60981/australia-vs-sri-lanka-final-65192/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1999_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/icc-world-cup-1999-61046/australia-vs-pakistan-final-65234/full-scorecard
+		 	https://www.espncricinfo.com/series/icc-world-cup-1999-61046/australia-vs-pakistan-final-65234/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2003_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/icc-world-cup-2002-03-61124/australia-vs-india-final-65286/ball-by-ball-commentary
+		 	https://www.espncricinfo.com/series/icc-world-cup-2002-03-61124/australia-vs-india-final-65286/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2007_Cricket_World_Cup
+		 	https://www.espncricinfo.com/series/icc-world-cup-2006-07-125929/australia-vs-sri-lanka-final-247507/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2011_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2010-11-381449/india-vs-sri-lanka-final-433606/ball-by-ball-commentary
+		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2010-11-381449/india-vs-sri-lanka-final-433606/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2015_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2014-15-509587/australia-vs-new-zealand-final-656495/ball-by-ball-commentary
+		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2014-15-509587/australia-vs-new-zealand-final-656495/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2019_Cricket_World_Cup
-		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/england-vs-new-zealand-final-1144530/ball-by-ball-commentary
+		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/england-vs-new-zealand-final-1144530/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2023_Cricket_World_Cup
+		 	https://www.espncricinfo.com/series/icc-cricket-world-cup-2023-24-1367856/india-vs-australia-final-1384439/live-cricket-score
 		 	
 		 	Women:
 		 	https://en.wikipedia.org/wiki/Women%27s_Cricket_World_Cup
 		 	https://en.wikipedia.org/wiki/1973_Women%27s_Cricket_World_Cup
+		 	https://www.espncricinfo.com/series/women-s-world-cup-1973-61179/england-women-vs-australia-women-21st-match-66887/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1978_Women%27s_Cricket_World_Cup
+		 	https://www.espncricinfo.com/series/women-s-world-cup-1977-78-61181/australia-women-vs-england-women-6th-match-66913/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1982_Women%27s_Cricket_World_Cup
 		 	https://en.wikipedia.org/wiki/1982_Women%27s_Cricket_World_Cup_final
 		 	https://www.espncricinfo.com/series/hansells-vita-fresh-women-s-world-cup-1981-82-61183/australia-women-vs-england-women-final-66971/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1988_Women%27s_Cricket_World_Cup
 		 	https://en.wikipedia.org/wiki/1988_Women%27s_Cricket_World_Cup_final
+		 	https://www.espncricinfo.com/series/shell-bicentennial-women-s-world-cup-1988-89-61196/australia-women-vs-england-women-final-67060/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1993_Women%27s_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/women-s-world-cup-1993-61205/england-women-vs-new-zealand-women-final-66893/live-cricket-score
 		 	https://en.wikipedia.org/wiki/1997_Women%27s_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/hero-honda-women-s-world-cup-1997-98-61222/australia-women-vs-new-zealand-women-final-66905/full-scorecard
 		 	https://en.wikipedia.org/wiki/2000_Women%27s_Cricket_World_Cup
 		 	https://en.wikipedia.org/wiki/2000_Women%27s_Cricket_World_Cup_final
+		 	https://www.espncricinfo.com/series/cricinfo-women-s-world-cup-2000-01-61240/new-zealand-women-vs-australia-women-final-67261/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2005_Women%27s_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/women-s-world-cup-2004-05-61271/australia-women-vs-india-women-final-67317/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2009_Women%27s_Cricket_World_Cup
@@ -222,25 +229,28 @@ public class ICC {
 		 	https://en.wikipedia.org/wiki/2013_Women%27s_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/icc-women-s-world-cup-2012-13-587632/australia-women-vs-west-indies-women-final-594915/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2017_Women%27s_Cricket_World_Cup
+		 	https://en.wikipedia.org/wiki/2017_Women%27s_Cricket_World_Cup_final
 		 	https://www.espncricinfo.com/series/icc-wwc-2017-1085935/england-women-vs-india-women-final-1085975/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2022_Women%27s_Cricket_World_Cup
+		 	https://www.espncricinfo.com/series/icc-women-s-world-cup-2021-22-1219028/australia-women-vs-england-women-final-1243938/live-cricket-score
+		 	
 		 * 
 		 */
 		int[] menEditions = {1975, 1979, 1983, 1987, 1992, 1996, 1999, 2003, 2007, 2011, 2015, 2019, 2023}; //The years a men's edition has taken place
 		int[] womenEditions = {1973, 1978, 1982, 1988, 1993, 1997, 2000, 2005, 2009, 2013, 2017, 2022}; //The years a women's edition has taken place
 		String[] menWinners = {"West Indies", "West Indies", "India", "Australia", "Pakistan", "Sri Lanka", "Australia", "Australia", "Australia", "India", "Australia", "England", "Australia"}; //The winners of the men's editions
-		String[] womenWinners = {"England", "Australia", "Australia", "England", "Australia", "New Zealand", "Australia", "England", "Australia", "England", "Australia"}; //The winners of the women's editions
+		String[] womenWinners = {"England", "Australia", "Australia", "Australia", "England", "Australia", "New Zealand", "Australia", "England", "Australia", "England", "Australia"}; //The winners of the women's editions
 		String[] menRunnersUp = {"Australia", "England", "West Indies", "England", "England", "Australia", "Pakistan", "India", "Sri Lanka", "Sri Lanka", "New Zealand", "New Zealand", "India"}; //The runners up of the men's editions
-		String[] womenRunnersUp = {"Australia", "England", "England", "England", "New Zealand", "New Zealand", "Australia", "India", "New Zealand", "West Indies", "India", "England", "TBD"}; //The runners up of the women's editions
+		String[] womenRunnersUp = {"Australia", "England", "England", "England", "New Zealand", "New Zealand", "Australia", "India", "New Zealand", "West Indies", "India", "England"}; //The runners up of the women's editions
 		String[] menHosts = {"England", "England", "England & Wales", "India & Pakistan", "Australia & New Zealand", "India, Pakistan & Sri Lanka", "England, Wales, Scotland, Ireland & Netherlands", "South Africa, Zimbabwe & Kenya", "West Indies", "India, Sri Lanka & Bangladesh", "Australia & New Zealand", "England & Wales", "India"}; //The hosts of the men's editions
 		String[] womenHosts = {"England", "India", "New Zealand", "Australia", "England", "India", "New Zealand", "India", "New Zealand", "South Africa", "Australia", "India", "England", "New Zealand"}; //The hosts of the women's editions
 		//For the coming categories...N/A means I couldn't find the player of the tournament/final for those editions
-		String[] menPOTT = {"N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "Sachin Tendulkar", "Glenn McGrath", "Yuvraj Singh", "Mitchell Starc", "Kane Williamson", "Virat Kohli"}; //The player of the tournament for the men's editions
-		String[] womenPOTT = {"N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "Karen Rolton", "Claire Taylor", "Suzie Bates", "Tammy Beaumont", "Alyssa Healy"}; //The player of the tournament for the women's editions
+		String[] menPOTT = {"N/A", "N/A", "N/A", "N/A", "Martin Crowe", "Sanath Jayasuriya", "Lance Klusener", "Sachin Tendulkar", "Glenn McGrath", "Yuvraj Singh", "Mitchell Starc", "Kane Williamson", "Virat Kohli"}; //The player of the tournament for the men's editions
+		String[] womenPOTT = {"N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "Lisa Keightley", "Karen Rolton", "Claire Taylor", "Suzie Bates", "Tammy Beaumont", "Alyssa Healy"}; //The player of the tournament for the women's editions
 		String[] menPOTF = {"Clive Lloyd", "Viv Richards", "Mohinder Amarnath", "David Boon", "Wasim Akram", "Aravinda de Silva", "Shane Warne", "Ricky Ponting", "Adam Gilchrist", "MS Dhoni", "James Faulkner", "Ben Stokes", "Travis Head"}; //The player of the match in the final for the men's editions
 		String[] womenPOTF = {"N/A", "N/A", "N/A", "N/A", "Jo Chamberlain", "Debbie Hockley", "Belinda Clark", "Karen Rolton", "Nicky Shaw", "Jess Cameron", "Anya Shrubsole", "Alyssa Healy"}; ///The player of the match in the final for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions,\nfor winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
@@ -308,33 +318,42 @@ public class ICC {
 		 Men:
 		 https://en.wikipedia.org/wiki/ICC_Champions_Trophy
 		 https://www.espncricinfo.com/series/wills-international-cup-1998-99-61033/south-africa-vs-west-indies-final-66169/live-cricket-score
-		 https://www.espncricinfo.com/series/icc-knockout-2000-01-61073/india-vs-new-zealand-final-66179/live-cricket-score
 		 https://en.wikipedia.org/wiki/2000_ICC_KnockOut_Trophy
 		 https://en.wikipedia.org/wiki/2000_ICC_KnockOut_Trophy_final
+		 https://www.espncricinfo.com/series/icc-knockout-2000-01-61073/india-vs-new-zealand-final-66179/live-cricket-score
 		 https://en.wikipedia.org/wiki/2002_ICC_Champions_Trophy
-		 https://www.espncricinfo.com/series/icc-champions-trophy-2002-03-61114/sri-lanka-vs-india-final-66194/live-cricket-score
+		 https://en.wikipedia.org/wiki/2002_ICC_Champions_Trophy_final
+		 https://www.espncricinfo.com/series/icc-champions-trophy-2002-03-61114/sri-lanka-vs-india-final-66194/full-scorecard		 
+		 https://www.espncricinfo.com/series/icc-champions-trophy-2002-03-61114/sri-lanka-vs-india-final-66195/full-scorecard
+		 https://en.wikipedia.org/wiki/2004_ICC_Champions_Trophy		 
 		 https://www.espncricinfo.com/series/icc-champions-trophy-2004-61157/england-vs-west-indies-final-66210/live-cricket-score
+		 https://en.wikipedia.org/wiki/2006_ICC_Champions_Trophy
+		 https://www.espncricinfo.com/series/icc-champions-trophy-2006-07-232694/australia-vs-west-indies-final-249759/live-cricket-score
+		 https://en.wikipedia.org/wiki/2009_ICC_Champions_Trophy
 		 https://www.espncricinfo.com/series/icc-champions-trophy-2009-10-374074/australia-vs-new-zealand-final-415287/live-cricket-score
+		 https://en.wikipedia.org/wiki/2013_ICC_Champions_Trophy
 		 https://www.espncricinfo.com/series/icc-champions-trophy-2013-566910/england-vs-india-final-566948/live-cricket-score
+		 https://en.wikipedia.org/wiki/2017_ICC_Champions_Trophy
 		 https://www.espncricinfo.com/series/icc-champions-trophy-2017-1022345/india-vs-pakistan-final-1022375/full-scorecard
+		 https://en.wikipedia.org/wiki/2025_ICC_Champions_Trophy
 		 https://www.espncricinfo.com/series/icc-champions-trophy-2024-25-1459031/india-vs-new-zealand-final-1466428/full-scorecard
 		 Women:
 		 https://en.wikipedia.org/wiki/ICC_Women%27s_Champions_Trophy
 		 */
 		int[] menEditions = {1998, 2000, 2002, 2004, 2006, 2009, 2013, 2017, 2025}; //The years a men's edition has taken place
 		int[] womenEditions = {}; //The years a women's  edition has taken place...the first will be in 2027
-		String[] menWinners = {"South Africa", "New Zealand", "India & Sri Lanka", "West Indies", "Australia", "Australia", "India", "Pakistan", "India"}; //The winners of the men's editions
+		String[] menWinners = {"South Africa", "New Zealand", "Sri Lanka & India", "West Indies", "Australia", "Australia", "India", "Pakistan", "India"}; //The winners of the men's editions
 		String[] womenWinners = {}; //The winners of the women's editions
 		String[] menRunnersUp = {"West Indies", "India", "N/A", "England", "West Indies", "New Zealand", "England", "India", "New Zealand"}; //The runners up of the men's editions
 		String[] womenRunnersUp = {}; //The runners up of the women's editions
-		String[] menHosts = {"Bangladesh", "Kenya", "Sri Lanka", "England", "India", "South Africa", "England & Wales", "Pakistan & United Arab Emirates"}; //The hosts of the men's editions
+		String[] menHosts = {"Bangladesh", "Kenya", "Sri Lanka", "England", "India", "South Africa", "England & Wales", "England & Wales", "Pakistan & United Arab Emirates"}; //The hosts of the men's editions
 		String[] womenHosts = {}; //The hosts of the women's editions...the 2027 edition will be hosted by Sri Lanka
-		String[] menPOTT = {"Jacques Kallis", "N/A", "Not awarded", "Ramnaresh Sarwan", "Chris Gayle", "Ricky Ponting", "Shikhar Dhawan", "Hasan Ali", "Rachin Ravindra"}; //The player of the tournament for the men's editions...N/A for [1] is because I cannot seem to find it
+		String[] menPOTT = {"Jacques Kallis", "N/A", "N/A", "Ramnaresh Sarwan", "Chris Gayle", "Ricky Ponting", "Shikhar Dhawan", "Hasan Ali", "Rachin Ravindra"}; //The player of the tournament for the men's editions...N/A for [1] is because I cannot seem to find it
 		String[] womenPOTT = {}; //The player of the tournament of the women's editions
 		String[] menPOTF = {"Jacques Kallis", "Chris Cairns", "N/A", "Ian Bradshaw", "Shane Watson", "Shane Watson", "Ravindra Jadeja", "Fakhar Zaman", "Rohit Sharma"}; //The player of the match in the final for the men's editions
 		String[] womenPOTF = {}; //The player of the match in the final for the women's editions
 		int index = -1; //declaring the index variable
-		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions, for winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
+		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the men's and (soon) women's editions,\nfor winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Which version? Men or women?");
 		String gender = input.next(); //get the gender
