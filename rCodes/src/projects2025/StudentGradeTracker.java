@@ -2,7 +2,7 @@ package projects2025;
 import java.util.*;
 /*
  * © 2025 Rishi
- * Last updated: 1st August, 2025
+ * Last updated: 8th August, 2025
  * This program is going to assist in tracking & analyzing student grades.
  * This came as an idea generated from AI.
  * 
@@ -27,6 +27,43 @@ class Student {
 		this.courses = courses;
 		this.id = id;
 	}
+	
+	public String getName() {
+		//This method returns the student's name
+		return this.name;
+	}
+	public void setName(String name) {
+		//This method sets the student's name
+		this.name = name;
+	}
+	
+	public Course getCourse(int i) {
+		//This method returns the course at the said index
+		return ((i < this.courses.length) && (i >= 0)) ? this.courses[i]: null;
+	}
+	public Course getCourse(String courseCode) {
+		//This is an alternative method to get a course
+		for (int i = 0; i < this.courses.length; i++) {
+			if (this.courses[i].getCourseCode().equals(courseCode)) {
+				return this.courses[i];
+			}
+		}
+		return null;
+	}
+	
+	public void addCourse(Course course) {
+		//This method adds a course to the end of the array;
+		Course[] coursesListUpdated = new Course [this.courses.length + 1];
+		for (int i = 0; i < this.courses.length; i++) {
+			coursesListUpdated[i] = this.courses[i];
+		}
+		coursesListUpdated[this.courses.length] = course;
+		this.courses = coursesListUpdated;
+	}
+	
+	
+	
+	
 }
 class Course {
 	private String courseCode; //This will be the course name
