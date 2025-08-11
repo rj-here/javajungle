@@ -3,13 +3,13 @@ import java.util.*;
 public class DLS {
 /*
  * © 2025 Rishi
- * Last updated: 11th July, 2025
+ * Last updated: 11th August, 2025
  * 
  * This method will be used to do calculations based on the Duckworth-Lewis-Stern system!
  * Sources:
  * https://www.omnicalculator.com/sports/duckworth-lewis
  * https://upload.wikimedia.org/wikipedia/commons/7/7f/%28Duckworth_Lewis%29_method_of_adjusting_target_scores.PNG
- * https://www.espncricinfo.com/ci/content/page/409991.htmlhttps://www.espncricinfo.com/ci/content/page/409991.html
+ * https://www.espncricinfo.com/ci/content/page/409991.html
  * 
  */
 		
