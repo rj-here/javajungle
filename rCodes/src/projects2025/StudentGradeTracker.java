@@ -2,12 +2,22 @@ package projects2025;
 import java.util.*;
 /*
  * © 2025 Rishi
- * Last updated: 8th August, 2025
+ * Last updated: 15th August, 2025
  * This program is going to assist in tracking & analyzing student grades.
  * This came as an idea generated from AI.
  * 
  */
 public class StudentGradeTracker {
+	private Student student; //A student whose details will be taken
+
+	public double getAverage() {
+		double average = 0;
+		for (int i = 0; i < this.student.getNumberOfCourses(); i++) {
+			average += this.student.getCourse(i).getCourseGrade();
+		}
+		average /= this.student.getNumberOfCourses();
+		return average;
+	}
 	
 	
 }
@@ -52,7 +62,7 @@ class Student {
 	}
 	
 	public void addCourse(Course course) {
-		//This method adds a course to the end of the array;
+		//This method adds a course to the end of the array
 		Course[] coursesListUpdated = new Course [this.courses.length + 1];
 		for (int i = 0; i < this.courses.length; i++) {
 			coursesListUpdated[i] = this.courses[i];
@@ -61,10 +71,43 @@ class Student {
 		this.courses = coursesListUpdated;
 	}
 	
+	public void removeCourse(Course course) {
+		//This method removes the said course from the array
+		Course[] coursesListUpdated = new Course [this.courses.length - 1];
+		int index = -1;
+		for (int i = 0; i < this.courses.length; i++) {
+			if (this.courses[i].equals(course)) {
+				index = i;
+				break;
+			}
+			coursesListUpdated[i] = this.courses[i];
+		}
+		for (int i = index; i < coursesListUpdated.length; i++) {
+			coursesListUpdated[i] = this.courses[i + 1];
+		}
+		
+	}
+	
+	public int getNumberOfCourses() {
+		//Get total number of courses student is taking
+		return this.courses.length;
+	}
+	
+	public int getStudentID() {
+		//This method returns the student's ID number
+		return this.id;
+	}
+	
+	public void setStudentID(int id) {
+		//This method sets a student's ID number
+		this.id = id;
+	}
+	
 	
 	
 	
 }
+
 class Course {
 	private String courseCode; //This will be the course name
 	private double courseGrade; //This will be the course grade
@@ -91,15 +134,26 @@ class Course {
 		this.courseCode = courseCode;
 	}
 	
+	public void changeCourseCode(Course course, String courseCode) {
+		//This method changes the course code
+		course.courseCode = courseCode;
+	}
+	
 	public double getCourseGrade() {
 		//This method returns the course grade
 		return this.courseGrade;
 	}
 	
-	public void getCourseGrade(double courseGrade) {
+	public void setCourseGrade(double courseGrade) {
 		//This method sets the course grade
 		this.courseGrade = courseGrade;
 	}
+	public void changeCourseGrade(Course course, double courseGrade) {
+		//This method changes the course grade
+		course.courseGrade = courseGrade;
+	}
+	
+	
 }
 
 
