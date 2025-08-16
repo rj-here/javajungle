@@ -603,7 +603,7 @@ public class DLS {
 			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
 		else if (team2DLS > team1DLS) { //team 2 resources more than team 1
-			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * (team2DLS - team1DLS)/100)));
+			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * ((team2DLS - team1DLS)/100))));
 		}
 		else if (team2DLS == team1DLS) { //same
 			parScoreForTeam2 = runsScored + 1;
@@ -639,7 +639,7 @@ public class DLS {
 			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
 		else if (team2DLS > team1DLS) { //team 2 resources more than team 1
-			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * (team2DLS - team1DLS)/100)));
+			parScoreForTeam2 = (int) (Math.ceil(runsScored + (genScore * ((team2DLS - team1DLS)/100))));
 		}
 		else if (team2DLS == team1DLS) { //same
 			parScoreForTeam2 = runsScored + 1;
@@ -679,7 +679,7 @@ public class DLS {
 			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
 		else if (team2DLS > team1DLS) {
-			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * ((team2DLS - team1DLS)/100)));
 		}
 		else if (team2DLS == team1DLS) {
 			parScoreForTeam2 = runsScored + 1;
@@ -711,7 +711,7 @@ public class DLS {
 			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
 		else if (team2DLS > team1DLS) { //team 2 resources more than team  1
-			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * ((team2DLS - team1DLS)/100)));
 		}
 		else if (team2DLS == team1DLS) { //same
 			parScoreForTeam2 = runsScored + 1;
@@ -740,7 +740,7 @@ public class DLS {
 			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS/team1DLS)));
 		}
 		else if (team2DLS > team1DLS) { //team 2 has more resources than team 1
-			parScoreForTeam2 = (int) (Math.ceil(runsScored * (team2DLS - team1DLS)/100));
+			parScoreForTeam2 = (int) (Math.ceil(runsScored * ((team2DLS - team1DLS)/100)));
 		}
 		else if (team2DLS == team1DLS) { //same
 			parScoreForTeam2 = runsScored + 1;
