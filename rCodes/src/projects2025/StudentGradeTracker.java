@@ -2,24 +2,29 @@ package projects2025;
 import java.util.*;
 /*
  * © 2025 Rishi
- * Last updated: 15th August, 2025
+ * Last updated: 24th August, 2025
  * This program is going to assist in tracking & analyzing student grades.
  * This came as an idea generated from AI.
  * 
  */
 public class StudentGradeTracker {
-	private Student student; //A student whose details will be taken
 
-	public double getAverage() {
+	public double getAverage(Student student) {
 		double average = 0;
-		for (int i = 0; i < this.student.getNumberOfCourses(); i++) {
-			average += this.student.getCourse(i).getCourseGrade();
+		for (int i = 0; i < student.getNumberOfCourses(); i++) {
+			average += student.getCourse(i).getCourseGrade();
 		}
-		average /= this.student.getNumberOfCourses();
+		average /= student.getNumberOfCourses();
 		return average;
-	}
+	}	
 	
 	
+}
+
+class StudentDLL {
+	private Student head; //The head (first student)
+	
+	private Student tail; //The tail (last student)
 }
 class Student {
 	private String name; //This will contain the student's name
