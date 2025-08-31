@@ -2,7 +2,7 @@ package projects2025;
 import java.util.*;
 /*
  * © 2025 Rishi
- * Last updated: 24th August, 2025
+ * Last updated: 31st August, 2025
  * This program is going to assist in tracking & analyzing student grades.
  * This came as an idea generated from AI.
  * 
@@ -23,8 +23,28 @@ public class StudentGradeTracker {
 
 class StudentDLL {
 	private Student head; //The head (first student)
-	
+	private Student element; //The element in question
+	private StudentDLL next; //The next in the list
 	private Student tail; //The tail (last student)
+	
+	StudentDLL() {
+		//Default constructor
+	}
+	
+	StudentDLL(Student element, StudentDLL next) {
+		//Constructor with element
+	}
+	
+	public Student getElement() {
+		//Get the student at the current element
+		return this.element;
+	}
+	public StudentDLL getNext() {
+		//Get the next part of the DLL
+		return this.next;
+	}
+	
+	
 }
 class Student {
 	private String name; //This will contain the student's name
