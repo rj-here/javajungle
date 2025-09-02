@@ -22,17 +22,21 @@ public class StudentGradeTracker {
 }
 
 class StudentDLL {
-	private Student head; //The head (first student)
+	private StudentDLL head; //The head (first student)
 	private Student element; //The element in question
 	private StudentDLL next; //The next in the list
-	private Student tail; //The tail (last student)
+	private StudentDLL tail; //The tail (last student)
 	
 	StudentDLL() {
 		//Default constructor
+		this.head = null;
+		this.tail = null;
 	}
 	
 	StudentDLL(Student element, StudentDLL next) {
 		//Constructor with element
+		this.head.element = element;
+		this.head.next = next;
 	}
 	
 	public Student getElement() {
@@ -42,6 +46,11 @@ class StudentDLL {
 	public StudentDLL getNext() {
 		//Get the next part of the DLL
 		return this.next;
+	}
+	
+	public void addHead(Student element) {
+		this.head.element = element;
+		this.head.next = this.tail;
 	}
 	
 	
