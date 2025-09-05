@@ -3,7 +3,7 @@ import java.util.*;
 public class DLS {
 /*
  * © 2025 Rishi
- * Last updated: 15th August, 2025
+ * Last updated: 5th September, 2025
  * 
  * This method will be used to do calculations based on the Duckworth-Lewis-Stern system!
  * Sources:
@@ -627,8 +627,7 @@ public class DLS {
 		int oversAvail2 = input.nextInt(); //The overs available to Team 2
 		System.out.println("What is the average expected score?");
 		int genScore = input.nextInt(); //Average expected score
-		System.out.println("What were the maximum overs available?");
-		int maxOvers = input.nextInt(); //Maximum overs available
+
 		
 		//DLS calculations for each team.
 		double team1DLS = percentageDLS(oversAvail1, wktLost); //Team 1 resources
