@@ -22,36 +22,40 @@ public class StudentGradeTracker {
 }
 
 class StudentDLL {
-	private StudentDLL head; //The head (first student)
-	private Student element; //The element in question
-	private StudentDLL next; //The next in the list
-	private StudentDLL tail; //The tail (last student)
+
+	private StudentDLL head; //First
+	private StudentDLL tail; //Last
+	private StudentDLL current; //Current
+	private StudentDLL prev; //Prev
+	private StudentDLL next; //Next
+	private Student element; //Student
 	
 	StudentDLL() {
-		//Default constructor
+		//The default constructor
 		this.head = null;
 		this.tail = null;
+		this.current = null;
+		this.prev = null;
+		this.next = null;
 	}
 	
-	StudentDLL(Student element, StudentDLL next) {
-		//Constructor with element
-		this.head.element = element;
-		this.head.next = next;
+	StudentDLL(StudentDLL head, StudentDLL tail, StudentDLL current, StudentDLL prev, StudentDLL next) {
+		//The constructor with details
+		this.head = head;
+		this.tail = tail;
+		this.current = current;
+		this.prev = prev;
+		this.next = next;
+	}
+
+	public void addFirst(Student student) {
+	//Attempting to add a first!
+	this.head.prev.element = student;
+	this.head.prev.next = this.head;
+	this.head = this.head.prev;
 	}
 	
-	public Student getElement() {
-		//Get the student at the current element
-		return this.element;
-	}
-	public StudentDLL getNext() {
-		//Get the next part of the DLL
-		return this.next;
-	}
 	
-	public void addHead(Student element) {
-		this.head.element = element;
-		this.head.next = this.tail;
-	}
 	
 	
 }
@@ -63,6 +67,7 @@ class Student {
 		//default constructor
 		this.name = "";
 		this.id = 0;
+		this.courses = null;
 		
 	}
 	Student(String name, Course[] courses, int id) {
