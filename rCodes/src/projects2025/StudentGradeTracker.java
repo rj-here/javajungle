@@ -37,22 +37,55 @@ class StudentDLL {
 		this.current = null;
 		this.prev = null;
 		this.next = null;
+		this.element = null;
 	}
 	
-	StudentDLL(StudentDLL head, StudentDLL tail, StudentDLL current, StudentDLL prev, StudentDLL next) {
+	StudentDLL(Student student) {
+		this.element = student;
+	}
+	
+	StudentDLL(StudentDLL head, StudentDLL tail, StudentDLL current, StudentDLL prev, StudentDLL next, Student element) {
 		//The constructor with details
 		this.head = head;
 		this.tail = tail;
 		this.current = current;
 		this.prev = prev;
 		this.next = next;
+		this.element = element;
 	}
 
 	public void addFirst(Student student) {
-	//Attempting to add a first!
-	this.head.prev.element = student;
-	this.head.prev.next = this.head;
-	this.head = this.head.prev;
+		//Adding the new element to start the list
+		StudentDLL newHead = new StudentDLL(student);
+		newHead.next = this.head;
+		this.head.prev = newHead;
+		this.head = newHead;
+		
+	}
+	public void addLast(Student student) {
+		//Adding the new element to finish the list
+		StudentDLL newTail = new StudentDLL(student);
+		newTail.prev = this.tail;
+		this.tail.next = newTail;
+		this.tail = newTail;
+	}
+	
+	public void addAt(int index, Student student) {
+		if (index == 0)
+			addFirst(student);
+		else {
+			int i = 0;
+			while (i < index) {
+				if (this.current == null) {
+					addLast(student);
+					break;
+				}
+				else {
+					i++;
+					this.current = this.next;
+				}
+			}
+		}
 	}
 	
 	
