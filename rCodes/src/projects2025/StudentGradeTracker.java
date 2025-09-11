@@ -71,12 +71,13 @@ class StudentDLL {
 	}
 	
 	public void addAt(int index, Student student) {
-		if (index == 0)
-			addFirst(student);
+		//Adding an element a specific index
+		if (index == 0) //First element!
+			addFirst(student); 
 		else {
 			int i = 0;
 			while (i < index) {
-				if (this.current == null) {
+				if (this.current == null) { //For the last element
 					addLast(student);
 					break;
 				}
@@ -86,6 +87,10 @@ class StudentDLL {
 				}
 			}
 		}
+	}
+	
+	public void removeAt(int index, Student student) {
+		//Removing an element
 	}
 	
 	
