@@ -3,7 +3,7 @@ import java.util.*;
 public class DLS {
 /*
  * © 2025 Rishi
- * Last updated: 5th September, 2025
+ * Last updated: 17th September, 2025
  * 
  * This method will be used to do calculations based on the Duckworth-Lewis-Stern system!
  * Sources:
@@ -20,7 +20,7 @@ public class DLS {
 	System.out.println("1. Team 1 has their innings interrupted.");
 	System.out.println("2. Team 1 has their innings cut short.");
 	System.out.println("3. Team 2 has their innings interrupted.");
-	System.out.println("4. Team 2 has their innings cut short");
+	System.out.println("4. Team 2 has their innings cut short.");
 	System.out.println("5. Team 2 has their innings delayed.");
 	int caseNumber = input.nextInt();
 	if (caseNumber == 1) {
@@ -625,6 +625,9 @@ public class DLS {
 		int runsScored = input.nextInt(); //The runs scored by Team 1
 		System.out.println("Overs available to Team 2:");
 		int oversAvail2 = input.nextInt(); //The overs available to Team 2
+		if (oversAvail2 < oversAvail1) {
+			System.out.println("INVALID!");
+		}
 		System.out.println("What is the average expected score?");
 		int genScore = input.nextInt(); //Average expected score
 
