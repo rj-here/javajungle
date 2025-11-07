@@ -233,22 +233,22 @@ public class ICC {
 		 	https://www.espncricinfo.com/series/icc-wwc-2017-1085935/england-women-vs-india-women-final-1085975/live-cricket-score
 		 	https://en.wikipedia.org/wiki/2022_Women%27s_Cricket_World_Cup
 		 	https://www.espncricinfo.com/series/icc-women-s-world-cup-2021-22-1219028/australia-women-vs-england-women-final-1243938/live-cricket-score
-		 	
+		 	https://en.wikipedia.org/wiki/2025_Women%27s_Cricket_World_Cup
 		 * 
 		 */
 		int[] menEditions = {1975, 1979, 1983, 1987, 1992, 1996, 1999, 2003, 2007, 2011, 2015, 2019, 2023}; //The years a men's edition has taken place
-		int[] womenEditions = {1973, 1978, 1982, 1988, 1993, 1997, 2000, 2005, 2009, 2013, 2017, 2022}; //The years a women's edition has taken place
+		int[] womenEditions = {1973, 1978, 1982, 1988, 1993, 1997, 2000, 2005, 2009, 2013, 2017, 2022, 2025}; //The years a women's edition has taken place
 		String[] menWinners = {"West Indies", "West Indies", "India", "Australia", "Pakistan", "Sri Lanka", "Australia", "Australia", "Australia", "India", "Australia", "England", "Australia"}; //The winners of the men's editions
-		String[] womenWinners = {"England", "Australia", "Australia", "Australia", "England", "Australia", "New Zealand", "Australia", "England", "Australia", "England", "Australia"}; //The winners of the women's editions
+		String[] womenWinners = {"England", "Australia", "Australia", "Australia", "England", "Australia", "New Zealand", "Australia", "England", "Australia", "England", "Australia", "India"}; //The winners of the women's editions
 		String[] menRunnersUp = {"Australia", "England", "West Indies", "England", "England", "Australia", "Pakistan", "India", "Sri Lanka", "Sri Lanka", "New Zealand", "New Zealand", "India"}; //The runners up of the men's editions
-		String[] womenRunnersUp = {"Australia", "England", "England", "England", "New Zealand", "New Zealand", "Australia", "India", "New Zealand", "West Indies", "India", "England"}; //The runners up of the women's editions
+		String[] womenRunnersUp = {"Australia", "England", "England", "England", "New Zealand", "New Zealand", "Australia", "India", "New Zealand", "West Indies", "India", "England", "South Africa"}; //The runners up of the women's editions
 		String[] menHosts = {"England", "England", "England & Wales", "India & Pakistan", "Australia & New Zealand", "India, Pakistan & Sri Lanka", "England, Wales, Scotland, Ireland & Netherlands", "South Africa, Zimbabwe & Kenya", "West Indies", "India, Sri Lanka & Bangladesh", "Australia & New Zealand", "England & Wales", "India"}; //The hosts of the men's editions
-		String[] womenHosts = {"England", "India", "New Zealand", "Australia", "England", "India", "New Zealand", "India", "New Zealand", "South Africa", "Australia", "India", "England", "New Zealand"}; //The hosts of the women's editions
+		String[] womenHosts = {"England", "India", "New Zealand", "Australia", "England", "India", "New Zealand", "India", "New Zealand", "South Africa", "Australia", "India", "England", "New Zealand", "India & Sri Lanka"}; //The hosts of the women's editions
 		//For the coming categories...N/A means I couldn't find the player of the tournament/final for those editions
 		String[] menPOTT = {"N/A", "N/A", "N/A", "N/A", "Martin Crowe", "Sanath Jayasuriya", "Lance Klusener", "Sachin Tendulkar", "Glenn McGrath", "Yuvraj Singh", "Mitchell Starc", "Kane Williamson", "Virat Kohli"}; //The player of the tournament for the men's editions
-		String[] womenPOTT = {"N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "Lisa Keightley", "Karen Rolton", "Claire Taylor", "Suzie Bates", "Tammy Beaumont", "Alyssa Healy"}; //The player of the tournament for the women's editions
+		String[] womenPOTT = {"N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "Lisa Keightley", "Karen Rolton", "Claire Taylor", "Suzie Bates", "Tammy Beaumont", "Alyssa Healy", "Deepti Sharma"}; //The player of the tournament for the women's editions
 		String[] menPOTF = {"Clive Lloyd", "Viv Richards", "Mohinder Amarnath", "David Boon", "Wasim Akram", "Aravinda de Silva", "Shane Warne", "Ricky Ponting", "Adam Gilchrist", "MS Dhoni", "James Faulkner", "Ben Stokes", "Travis Head"}; //The player of the match in the final for the men's editions
-		String[] womenPOTF = {"N/A", "N/A", "N/A", "N/A", "Jo Chamberlain", "Debbie Hockley", "Belinda Clark", "Karen Rolton", "Nicky Shaw", "Jess Cameron", "Anya Shrubsole", "Alyssa Healy"}; ///The player of the match in the final for the women's editions
+		String[] womenPOTF = {"N/A", "N/A", "N/A", "N/A", "Jo Chamberlain", "Debbie Hockley", "Belinda Clark", "Karen Rolton", "Nicky Shaw", "Jess Cameron", "Anya Shrubsole", "Alyssa Healy", "Shafali Varma"}; ///The player of the match in the final for the women's editions
 		int index = -1; //declaring the index variable
 		System.out.println("Which edition would you like to know about? And what exactly? You can choose from the many men's and women's editions,\nfor winners (W), player of the final (POTF), player of the tournament (POTT),\nthe runners up (RU), and hosts (H).");
 		Scanner input = new Scanner(System.in);
