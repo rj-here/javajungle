@@ -18,7 +18,7 @@ public class DLS {
 	//This will be the main welcome page, from here, the user navigates to the said case they want to do.
 	System.out.println("Greetings! Let's calculate DLS! For now, this is to just be for 50-over games (and the assumption is of maximum overs being 50). But first, which case is at hand here?");
 	System.out.println("1. Team 1 has their innings interrupted.");
-	System.out.println("2. Team 1 has their innings cut short.");
+	//System.out.println("2. Team 1 has their innings cut short.");
 	System.out.println("3. Team 2 has their innings interrupted.");
 	System.out.println("4. Team 2 has their innings cut short.");
 	System.out.println("5. Team 2 has their innings delayed.");
@@ -26,9 +26,9 @@ public class DLS {
 	if (caseNumber == 1) {
 		case1();
 	}
-	else if (caseNumber == 2) {
+	/*else if (caseNumber == 2) {
 		case2();
-	}
+	}*/
 	else if (caseNumber == 3) {
 		case3();
 	}
@@ -611,7 +611,7 @@ public class DLS {
 		System.out.println("The par score for Team 2 using DLS is: " + parScoreForTeam2); //Output
 		input.close();
 	}
-	
+	/*
 	public static void case2() {
 		//Team 1 has their innings cut short
 		System.out.println("Case 2 it is! There is a lot we got to do here!");
@@ -651,7 +651,7 @@ public class DLS {
 		
 	
 	}
-	
+	*/
 	public static void case3() {
 		//Team 2 has their innings interrupted
 		System.out.println("Case 3 it is! Lots to do here.");
