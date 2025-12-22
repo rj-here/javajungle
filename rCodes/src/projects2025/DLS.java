@@ -3,7 +3,7 @@ import java.util.*;
 public class DLS {
 /*
  * © 2025 Rishi
- * Last updated: 17th September, 2025
+ * Last updated: 21st December, 2025
  * 
  * This method will be used to do calculations based on the Duckworth-Lewis-Stern system!
  * Sources:
