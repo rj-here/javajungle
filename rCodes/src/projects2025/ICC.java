@@ -2,8 +2,8 @@ package projects2025;
 import java.util.*;
 public class ICC {
 /*
- * © 2025 Rishi
- * Last updated: 20th July, 2025
+ * © 2026 Rishi
+ * Last updated: 16th February, 2026
  An all-tournament database, of major details. Will use ESPNCricinfo & Wikipedia to double check things.
  This will feature tournaments which have taken place already, hence I do not have for example the 2025 Women's Cricket World Cup, to be held in India & Sri Lanka later this year. Though, I will update at the time of the tournament!
  */
@@ -81,6 +81,7 @@ public class ICC {
 		  https://en.wikipedia.org/wiki/2021_Men%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2022_Men%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup
+		  https://en.wikipedia.org/wiki/2026_Men%27s_T20_World_Cup
 		  Women:
 		  https://en.wikipedia.org/wiki/Women%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2009_Women%27s_World_Twenty20
@@ -93,15 +94,16 @@ public class ICC {
 		  https://en.wikipedia.org/wiki/2023_Women%27s_T20_World_Cup
 		  https://en.wikipedia.org/wiki/2024_Women%27s_T20_World_Cup
 		  https://www.espncricinfo.com/series/icc-women-s-t20-world-cup-2024-25-1432420/new-zealand-women-vs-south-africa-women-final-1432444/full-scorecard
+		  https://en.wikipedia.org/wiki/2026_Women%27s_T20_World_Cup
 		 */
-		int[] menEditions = {2007, 2009, 2010, 2012, 2014, 2016, 2021, 2022, 2024}; //The years a men's edition has taken place
-		int[] womenEditions = {2009, 2010, 2012, 2014, 2016, 2018, 2020, 2023, 2024}; //The years a women's edition has taken place
+		int[] menEditions = {2007, 2009, 2010, 2012, 2014, 2016, 2021, 2022, 2024, /*2026*/}; //The years a men's edition has taken place
+		int[] womenEditions = {2009, 2010, 2012, 2014, 2016, 2018, 2020, 2023, 2024, /*2026*/}; //The years a women's edition has taken place
 		String[] menWinners = {"India", "Pakistan", "England", "West Indies", "Sri Lanka", "West Indies", "Australia", "England", "India"}; //The winning teams of the men's editions
 		String[] womenWinners = {"England", "Australia", "Australia", "Australia", "West Indies", "Australia", "Australia", "Australia", "New Zealand"}; //The winning teams of the women's editions
 		String[] menRunnersUp = {"Pakistan", "Sri Lanka", "Australia", "Sri Lanka", "India", "England", "New Zealand", "Pakistan", "South Africa"}; //The runners up of the men's editions
 		String[] womenRunnersUp = {"New Zealand", "New Zealand", "England", "England", "Australia", "England", "India", "South Africa", "South Africa"}; //The runners up of the women's editions
-		String[] menHosts = {"South Africa", "England", "West Indies", "Sri Lanka", "Bangladesh", "India", "United Arab Emirates & Oman", "Australia", "West Indies & United States of America"}; //The hosts of the men's editions
-		String[] womenHosts = {"England", "West Indies", "Sri Lanka", "Bangladesh", "India", "West Indies", "Australia", "South Africa", "United Arab Emirates"}; //The hosts of the women's editions
+		String[] menHosts = {"South Africa", "England", "West Indies", "Sri Lanka", "Bangladesh", "India", "United Arab Emirates & Oman", "Australia", "West Indies & United States of America", /* India & Sri Lanka */}; //The hosts of the men's editions
+		String[] womenHosts = {"England", "West Indies", "Sri Lanka", "Bangladesh", "India", "West Indies", "Australia", "South Africa", "United Arab Emirates", /*England & Wales*/}; //The hosts of the women's editions
 		String[] menPOTT = {"Shahid Afridi", "Tillakaratne Dilshan", "Kevin Pietersen", "Shane Watson", "Virat Kohli", "Virat Kohli", "David Warner", "Sam Curran", "Jasprit Bumrah"}; //The player of the tournament for the men's editions
 		String[] womenPOTT = {"Claire Taylor", "Nicola Browne", "Charlotte Edwards", "Anya Shrubsole", "Stafanie Taylor", "Alyssa Healy", "Beth Mooney", "Ashleigh Gardner", "Amelia Kerr"}; //The player of the tournament for the women's editions
 		String[] menPOTF = {"Irfan Pathan", "Shahid Afridi", "Craig Kieswetter", "Marlon Samuels", "Kumar Sangakarra", "Marlon Samuels", "Mitchell Marsh", "Sam Curran", "Virat Kohli"}; //The player of the match in the final for the men's editions
@@ -341,7 +343,7 @@ public class ICC {
 		 https://en.wikipedia.org/wiki/ICC_Women%27s_Champions_Trophy
 		 */
 		int[] menEditions = {1998, 2000, 2002, 2004, 2006, 2009, 2013, 2017, 2025}; //The years a men's edition has taken place
-		int[] womenEditions = {}; //The years a women's  edition has taken place...the first will be in 2027
+		int[] womenEditions = {2027}; //The years a women's  edition has taken place...the first will be in 2027
 		String[] menWinners = {"South Africa", "New Zealand", "Sri Lanka & India", "West Indies", "Australia", "Australia", "India", "Pakistan", "India"}; //The winners of the men's editions
 		String[] womenWinners = {}; //The winners of the women's editions
 		String[] menRunnersUp = {"West Indies", "India", "N/A", "England", "West Indies", "New Zealand", "England", "India", "New Zealand"}; //The runners up of the men's editions

@@ -1,6 +1,8 @@
 package projects2025;
 import java.util.*;
 /*
+ * © 2026 Rishi
+ * Last updated: 7th February, 2026
  * Where I actually had first cracked how to calculate net run rate!
  * Source: https://www.espncricinfo.com/ci/content/page/429305.html
  */

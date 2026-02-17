@@ -1,10 +1,10 @@
 package projects2025;
 import java.util.*;
 /*
- Providing as reference:
- https://en.wikipedia.org/wiki/Snakes_and_ladders
- 
- The variation here is based on how I've played...so 3 rolls of 6 is unlucky!
+ * © 2026 Rishi
+ * Last updated: 7th February, 2026
+ * Providing as reference: https://en.wikipedia.org/wiki/Snakes_and_ladders
+ * The variation here is based on how I've played...so 3 rolls of 6 is unlucky!
  */
 public class SnakesAndLadders {
 
@@ -68,6 +68,7 @@ public class SnakesAndLadders {
 		}
 		while (max!=100); 
 		System.out.println("Game over!");
+		input.close();
 		
 	}
 	

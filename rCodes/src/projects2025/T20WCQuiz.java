@@ -1,29 +1,33 @@
 package projects2025;
 import java.util.*;
 /*
-  I've taken the details from these pages:
-  Men:
-  https://en.wikipedia.org/wiki/Men%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2007_World_Twenty20
-  https://en.wikipedia.org/wiki/2009_World_Twenty20
-  https://en.wikipedia.org/wiki/2010_World_Twenty20
-  https://en.wikipedia.org/wiki/2012_World_Twenty20
-  https://en.wikipedia.org/wiki/2014_World_Twenty20
-  https://en.wikipedia.org/wiki/2016_World_Twenty20
-  https://en.wikipedia.org/wiki/2021_Men%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2022_Men%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup
-  Women:
-  https://en.wikipedia.org/wiki/Women%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2009_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2010_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2012_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2014_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2016_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2018_Women%27s_World_Twenty20
-  https://en.wikipedia.org/wiki/2020_Women%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2023_Women%27s_T20_World_Cup
-  https://en.wikipedia.org/wiki/2024_Women%27s_T20_World_Cup
+ * © 2026 Rishi
+ * Last updated: 16th February, 2026
+ *  I've taken the details from these pages:
+ *  Men:
+ *  https://en.wikipedia.org/wiki/Men%27s_T20_World_Cup
+ *  https://en.wikipedia.org/wiki/2007_World_Twenty20
+ *  https://en.wikipedia.org/wiki/2009_World_Twenty20
+ * https://en.wikipedia.org/wiki/2010_World_Twenty20
+ * https://en.wikipedia.org/wiki/2012_World_Twenty20
+ * https://en.wikipedia.org/wiki/2014_World_Twenty20
+ * https://en.wikipedia.org/wiki/2016_World_Twenty20
+ * https://en.wikipedia.org/wiki/2021_Men%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2022_Men%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2024_Men%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2026_Men%27s_T20_World_Cup
+ * Women:
+ * https://en.wikipedia.org/wiki/Women%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2009_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2010_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2012_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2014_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2016_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2018_Women%27s_World_Twenty20
+ * https://en.wikipedia.org/wiki/2020_Women%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2023_Women%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2024_Women%27s_T20_World_Cup
+ * https://en.wikipedia.org/wiki/2026_Women%27s_T20_World_Cup
  */
 
 public class T20WCQuiz {
@@ -84,6 +88,7 @@ public class T20WCQuiz {
 		menHosts.put(2021, "UAE & Oman");
 		menHosts.put(2022, "Australia");
 		menHosts.put(2024, "West Indies & USA");
+		//menHosts.put(2026, "India & Sri Lanka");
 		return menHosts;
 	}
 	
@@ -97,6 +102,7 @@ public class T20WCQuiz {
 		womenHosts.put(2020, "Australia");
 		womenHosts.put(2023, "South Africa");
 		womenHosts.put(2024, "UAE");
+		//womenHosts.put(2026, "England & Wales");
 		return womenHosts;
 	}
 	
@@ -110,6 +116,7 @@ public class T20WCQuiz {
 		menWinners.put(2021, "Australia");
 		menWinners.put(2022, "England");
 		menWinners.put(2024, "India");
+		//menWinners.put(2026, "TBD");
 		return menWinners;
 	}
 
@@ -123,6 +130,7 @@ public class T20WCQuiz {
 		womenWinners.put(2020, "Australia");
 		womenWinners.put(2023, "Australia");
 		womenWinners.put(2024, "New Zealand");
+		//womenWinners.put(2026, "TBD");
 		return womenWinners;
 	}
 	
@@ -136,6 +144,7 @@ public class T20WCQuiz {
 		menPOTT.put(2021, "David Warner");
 		menPOTT.put(2022, "Sam Curran");
 		menPOTT.put(2024, "Jasprit Bumrah");
+		//menPOTT.put(2026, "TBD");
 		return menPOTT;
 	}
 	
@@ -149,6 +158,7 @@ public class T20WCQuiz {
 		womenPOTT.put(2020, "Beth Mooney");
 		womenPOTT.put(2023, "Ashleigh Gardner");
 		womenPOTT.put(2024, "Amelia Kerr");
+		//womenPOTT.put(2026, "TBD");
 		return womenPOTT;
 	}
 	
@@ -162,6 +172,7 @@ public class T20WCQuiz {
 		menPOTF.put(2021, "Mitchell Marsh");
 		menPOTF.put(2022, "Sam Curran");
 		menPOTF.put(2024, "Virat Kohli");
+		//menPOTF.put(2026, "TBD");
 		return menPOTF;
 	}
 	
@@ -175,6 +186,7 @@ public class T20WCQuiz {
 		womenPOTF.put(2020, "Alyssa Healy");
 		womenPOTF.put(2023, "Beth Mooney");
 		womenPOTF.put(2024, "Amelia Kerr");
+		//womenPOTF.put(2026, "TBD");
 		return womenPOTF;
 	}
 	
