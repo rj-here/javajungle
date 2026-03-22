@@ -2,7 +2,7 @@ package projects2025;
 import java.util.*;
 /*
  * © 2026 Rishi
- * Last updated: 7th February, 2026
+ * Last updated: 22nd March, 2026
  * Providing as reference: https://en.wikipedia.org/wiki/Snakes_and_ladders
  * The variation here is based on how I've played...so 3 rolls of 6 is unlucky!
  */
@@ -80,6 +80,7 @@ public class SnakesAndLadders {
 	public static int player() {
 		Scanner input = new Scanner (System.in);
 		int playerCount = input.nextInt(); 
+		input.close();
 		return playerCount;
 	}
 	

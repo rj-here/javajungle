@@ -2,7 +2,7 @@ package projects2025;
 import java.util.*;
 /*
  * © 2026 Rishi
- * Last updated: 16th February, 2026
+ * Last updated: 22nd March, 2026
  *  I've taken the details from these pages:
  *  Men:
  *  https://en.wikipedia.org/wiki/Men%27s_T20_World_Cup
@@ -88,7 +88,7 @@ public class T20WCQuiz {
 		menHosts.put(2021, "UAE & Oman");
 		menHosts.put(2022, "Australia");
 		menHosts.put(2024, "West Indies & USA");
-		//menHosts.put(2026, "India & Sri Lanka");
+		menHosts.put(2026, "India & Sri Lanka");
 		return menHosts;
 	}
 	
@@ -116,7 +116,7 @@ public class T20WCQuiz {
 		menWinners.put(2021, "Australia");
 		menWinners.put(2022, "England");
 		menWinners.put(2024, "India");
-		//menWinners.put(2026, "TBD");
+		menWinners.put(2026, "India");
 		return menWinners;
 	}
 
@@ -144,7 +144,7 @@ public class T20WCQuiz {
 		menPOTT.put(2021, "David Warner");
 		menPOTT.put(2022, "Sam Curran");
 		menPOTT.put(2024, "Jasprit Bumrah");
-		//menPOTT.put(2026, "TBD");
+		menPOTT.put(2026, "Sanju Samson");
 		return menPOTT;
 	}
 	
@@ -172,7 +172,7 @@ public class T20WCQuiz {
 		menPOTF.put(2021, "Mitchell Marsh");
 		menPOTF.put(2022, "Sam Curran");
 		menPOTF.put(2024, "Virat Kohli");
-		//menPOTF.put(2026, "TBD");
+		menPOTF.put(2026, "Jasprit Bumrah");
 		return menPOTF;
 	}
 	
